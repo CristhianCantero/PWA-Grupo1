@@ -1,0 +1,203 @@
+/* body {
+    background-image: url("img/fondo.jpg");
+    background-repeat: repeat;
+} */
+
+/* ESTILOS CARRUSEL */
+
+.carousel-item{
+    height: 100vh;
+    min-height: 400px;
+    /* background-size: cover;
+    object-fit: cover; */
+    background: no-repeat center center scroll;
+}
+
+.carousel-item img{
+    object-fit: cover;
+}
+
+.carousel-caption{
+    bottom: 250px;
+    background: #262626af;
+    border-radius: 20px;
+}
+
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    font-family: merienda;
+}
+
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+    font-family: poppins;
+}
+
+.carousel-caption a{
+    text-transform: uppercase;
+    background: #f13800e3;
+    padding: 5px 20px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 15px;
+}
+
+/* ESTILOS NAVBAR */
+
+.navbar-nav a{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar-light{
+    background: rgba(0, 0, 0, 0.493);
+}
+
+.navbar-light .navbar-brand{
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link{
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-item .dropdown-menu .nav-link{
+    color: #ffffff;
+    -webkit-text-stroke: 0.2px black;
+    font-weight: bold;
+}
+
+.navbar-nav{
+    text-align: center;
+    float: left;
+}
+
+.navbar-link{
+    padding: .2rem 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color: #000 !important;
+}
+
+.dropdown-menu .nav-link:focus, .dropdown-menu .nav-link:hover{
+    color: #000 !important;
+}
+
+.w-100{
+    height: 100vh;
+}
+
+.img-fluid{
+    max-height: 600px;
+}
+
+@media only screen and (min-width: 990px){
+    #columna-1{
+        background-color: red;
+        height: 220px;
+        text-align: center;
+        align-self: start;
+        font-size: 60px;
+    }
+
+    #columna-2{
+        background-color: red;
+        height: 220px;
+        text-align: center;
+        align-self: start;
+        font-size: 60px;        
+    }
+    #columna-3{
+        background: red;
+        height: 220px;
+        text-align: center;
+        align-self: start;
+        font-size: 60px;
+    }
+    #footer-1{
+        background-color: yellow;
+        text-align: right;
+    }
+    #footer-2{
+        background-color: yellow;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    #columna-1{
+        background-color: red;
+        height: 220px;
+        text-align: left;
+        align-self: start;
+        font-size: 60px;
+    }
+
+    #columna-2{
+        background-color: red;
+        height: 220px;
+        text-align: right;
+        align-self: start;
+        font-size: 60px;
+    }
+    #columna-3{
+        background: greenyellow;
+        height: 220px;
+        text-align: center;
+        align-self: start;
+        font-size: 60px;
+    }
+    #footer-1{
+        background-color: yellow;
+        text-align: center;
+    }
+    #footer-2{
+        background-color: yellow;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    #columna-1{
+        background-color: red;
+        height: 220px;
+        text-align: left;
+        align-self: start;
+        font-size: 60px;
+    }
+
+    #columna-2{
+        background-color: lightblue;
+        height: 220px;
+        text-align: center;
+        align-self: start;
+        font-size: 60px;
+    }
+    #columna-3{
+        background: red;
+        height: 220px;
+        text-align: right;
+        align-self: start;
+        font-size: 60px;
+    }
+    #footer-1{
+        background-color: yellow;
+        text-align: center;
+    }
+    #footer-2{
+        background-color: yellow;
+        text-align: center;
+    }
+}
