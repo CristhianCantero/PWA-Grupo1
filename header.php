@@ -10,9 +10,7 @@
     <title><?php echo $Titulo ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/">
-
-
-
+    
     <!-- Bootstrap core CSS -->
     <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -52,7 +50,7 @@
 
     <header class="mb-5">
         <!-- Fixed navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
@@ -109,6 +107,18 @@
                                 </li>
                                 <li class="dropdown-item">
                                     <a class="nav-link" href="../../trabajosPracticos/tp2/ejercicio2.php">Ejercicio 2</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp2/ejercicio3.php">Ejercicio 3</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp2/ejercicio4.php">Ejercicio 4</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp2/ejercicio5.php">Ejercicio 5</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp2/ejercicio6.php">Ejercicio 6</a>
                                 </li>
                             </ul>
                         </li>

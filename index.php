@@ -49,18 +49,18 @@
 </head>
 
 <body>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
+            <a class="nav-link" aria-current="page" href="">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               TRABAJO PRACTICO 1
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
               <li class="dropdown-item">
                 <a class="nav-link" href="trabajosPracticos/tp1/ejercicio1.php">Ejercicio 1</a>
               </li>
@@ -100,7 +100,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               TRABAJO PRACTICO 2
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
               <li class="dropdown-item">
                 <a class="nav-link" href="trabajosPracticos/tp2/ejercicio1.php">Ejercicio 1</a>
               </li>
