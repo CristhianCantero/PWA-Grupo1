@@ -31,6 +31,33 @@ include_once("../../header.php");
         </div>
     </div>
     <hr>
+    <h2 align="center">Registro de Usuarios</h2>
+    <form id="formulario" class="mb-2 col-4 needs-validation" style="margin: auto;" method="POST">
+        <label for="nombre" class="form-label">Nombre:</label>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="nombre">
+        </div>
+        <label for="empresa" class="form-label">Empresa:</label>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="empresa">
+        </div>
+        <label for="telefono" class="form-label">Telefono:</label>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="telefono">
+        </div>
+        <label for="email" class="form-label">Email:</label>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="email">
+        </div>
+        <label for="comentarios" class="form-label">Comentarios:</label>
+        <div class="input-group mb-3">
+            <textarea class="form-control" id="comentarios"></textarea>
+        </div>
+        <div class="d-grid gap-2 d-md-block">
+            <button class="btn btn-primary" type="button" onclick="Verificacion();">Enviar</button>
+            <button class="btn btn-danger" type="reset">Borrar</button>
+        </div>
+    </form>
 </div>
 
 <?php

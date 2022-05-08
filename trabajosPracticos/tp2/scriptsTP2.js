@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // Ejercicio 1
     $('select#listadoGeneros').on('change', function (e) {
         let genero = e.currentTarget.value;
         $.ajax({
@@ -19,7 +20,7 @@ $(document).ready(function () {
             },
         });
     });
-
+    // Ejercicio 2
     $('button.genero').on('click', function (e) {
         let genero = e.currentTarget.value;
         $.ajax({
@@ -76,6 +77,7 @@ $(document).ready(function () {
     //     });
     // });
 
+    // Ejercicio 3
     $('li#imagenes').on('click', function (e) {
         let idPelicula = e.currentTarget.value;
         $.ajax({
@@ -93,6 +95,16 @@ $(document).ready(function () {
                 alert('Hubo un error con la URL, favor de verificarla');
             },
         });
+    });
+
+    // Ejercicio 4
+    $('').on('click', function(e){
+        
+    });
+
+    // Base
+    $('').on('click', function(e){
+        
     });
 });
 

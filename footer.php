@@ -12,6 +12,7 @@
 
 <script src="./app.js"></script>
 <script src="./scriptsTP2.js"></script>
+<script src="./verificarFormularioEj4.js"></script>
 </body>
 
 </html>
