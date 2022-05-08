@@ -10,7 +10,7 @@ if ($con->connect_error) {
 }
 
 /* SQL query to get results from database */
-$sql = "SELECT Mail FROM contactos";
+$sql = "SELECT * FROM contactos";
 $result = $con->query($sql);
 /* If there are results from database push to result array */
 if ($result->num_rows > 0) {

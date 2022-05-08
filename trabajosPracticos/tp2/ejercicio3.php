@@ -82,5 +82,6 @@ include_once("../../header.php");
 </div>
 
 <?php
+$archivo = "ejercicio3.js";
 include_once("../../footer.php")
 ?>

@@ -83,18 +83,20 @@ function validarFormulario() {
 function validarCorreo(email, informacionUsuario) {
     $.ajax({
         method: "GET",
-        url: "validarCorreo.php",
+        url: "assets/consultasBD/extraerContactos.php",
     }).done(function (data) {
         var existe = false;
-        $.each(data, function (ind, mail) {
-            if(email === mail['Mail']){
+        $.each(data, function (ind, contacto) {
+            var mail = contacto['Mail'];
+            if (email === mail) {
                 existe = true;
             }
         });
-        if(!existe){
+        if (!existe) {
             cargarFormulario(informacionUsuario);
             borrarFormulario();
-        }else{
+            window.location.replace("http://localhost/PWA/trabajosPracticos/tp2/ejercicio5.php");
+        } else {
             alert("El correo ya existe en la base de datos, favor de registrarse con otro. Muchas gracias!")
             campo = document.getElementById("email");
             campo.style.borderColor = "red";
@@ -117,7 +119,7 @@ function cargarFormulario(informacionUsuario) {
         }
     }
 
-    xmlhttp.open("POST", "subidaServidorEj4.php", true);
+    xmlhttp.open("POST", "assets/consultasBD/cargarContacto.php", true);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send(informacionUsuario);
 }
