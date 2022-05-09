@@ -95,7 +95,7 @@ function validarCorreo(email, informacionUsuario) {
         if (!existe) {
             cargarFormulario(informacionUsuario);
             borrarFormulario();
-            window.location.replace("http://localhost/PWA/trabajosPracticos/tp2/ejercicio5.php");
+            window.location.replace("../tp2/ejercicio5.php");
         } else {
             alert("El correo ya existe en la base de datos, favor de registrarse con otro. Muchas gracias!")
             campo = document.getElementById("email");

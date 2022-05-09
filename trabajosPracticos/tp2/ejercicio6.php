@@ -19,6 +19,30 @@ include_once("../../header.php");
     <hr>
 </div>
 
+<div class="container mt-2">
+    <div class="container mt-2">
+        <form class="form-group" id="formularioContacto" method="POST">
+            <label class="mt-2" for="nombre">Nombre:</label>
+            <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="helpId" placeholder="Nombre">
+            <label class="mt-2" for="">Empresa:</label>
+            <input type="text" class="form-control" name="empresa" id="empresa" aria-describedby="helpId" placeholder="Empresa">
+            <label class="mt-2" for="telefono">Teléfono:</label>
+            <input type="number" class="form-control" name="telefono" id="telefono" aria-describedby="helpId" placeholder="Teléfono">
+            <label class="mt-2" for="mail">Mail:</label>
+            <input type="text" class="form-control" name="mail" id="mail" aria-describedby="helpId" placeholder="Mail">
+            <label class="mt-2" for="pais">Pais:</label>
+            <input type="text" id="pais" name="pais" class="form-control">
+            <select id="mostrarPaises" class="form-control mt-3">
+            </select>
+            <label class="mt-2" for="estado">Estado</label>
+            <input type="text" id="estado" name="estado" class="form-control">
+            <select id="mostrarEstados" class="form-control mt-3"></select>
+            <label class="mt-2" for="comentarios">Comentarios:</label>
+            <textarea type="text" class="form-control" name="comentarios" id="comentarios" aria-describedby="helpId" placeholder="Comentarios"></textarea>
+        </form>
+    </div>
+</div>
+
 <?php
 $archivo = "ejercicio6.js";
 include_once("../../footer.php")
