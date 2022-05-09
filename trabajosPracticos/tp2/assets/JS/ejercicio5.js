@@ -1,12 +1,19 @@
 $(document).ready(function () {
-    $.ajax({
-        method: "GET",
-        url: "assets/consultasBD/extraerContactos.php",
-    }).done(function (data) {
-        var contactos = "";
-        $.each(data, function (ind, contacto) {
-            contactos += `<tr><td>${contacto.Nombre}</td><td>${contacto.Empresa}</td><td>${contacto.Telefono}</td><td>${contacto.Mail}</td><td>${contacto.Comentario}</td></tr>`;
-        });
-        $("#tableBodyEjercicio5").append(contactos);
-    });
+    load_data();
+    function load_data(page) {
+        $.ajax({
+            url: "assets/consultasBD/extraerContactos.php",
+            method: "POST",
+            data: { page: page },
+            success: function (data) {
+                console.log(data)
+                $("#tablaContactos").html(data);
+            }
+        })
+    };
+
+    $(document).on('click', '.pagination_link', function () {
+        var page = $(this).attr("id");
+        load_data(page);
+    })
 });

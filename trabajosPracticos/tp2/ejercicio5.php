@@ -15,21 +15,7 @@ include_once("../../header.php");
         </div>
     </div>
     <hr>
-    <div class="container mt-2">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Empresa</th>
-                    <th>Telefono</th>
-                    <th>Email</th>
-                    <th>Comentario</th>
-                </tr>
-            </thead>
-            <tbody id="tableBodyEjercicio5">
-
-            </tbody>
-        </table>
+    <div class="container mt-2" id="tablaContactos">
     </div>
 </div>
 

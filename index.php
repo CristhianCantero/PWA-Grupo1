@@ -102,10 +102,22 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
               <li class="dropdown-item">
-                <a class="nav-link" href="trabajosPracticos/tp2/ejercicio1.php">Ejercicio 1</a>
+                <a class="nav-link" href="../../trabajosPracticos/tp2/ejercicio1.php">Ejercicio 1</a>
               </li>
               <li class="dropdown-item">
-                <a class="nav-link" href="trabajosPracticos/tp2/ejercicio2.php">Ejercicio 2</a>
+                <a class="nav-link" href="../../trabajosPracticos/tp2/ejercicio2.php">Ejercicio 2</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="nav-link" href="../../trabajosPracticos/tp2/ejercicio3.php">Ejercicio 3</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="nav-link" href="../../trabajosPracticos/tp2/ejercicio4.php">Ejercicio 4</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="nav-link" href="../../trabajosPracticos/tp2/ejercicio5.php">Ejercicio 5</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="nav-link" href="../../trabajosPracticos/tp2/ejercicio6.php">Ejercicio 6</a>
               </li>
             </ul>
           </li>

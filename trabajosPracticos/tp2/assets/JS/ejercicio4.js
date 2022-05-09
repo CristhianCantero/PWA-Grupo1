@@ -83,7 +83,7 @@ function validarFormulario() {
 function validarCorreo(email, informacionUsuario) {
     $.ajax({
         method: "GET",
-        url: "assets/consultasBD/extraerContactos.php",
+        url: "assets/consultasBD/extraerContactosBasica.php",
     }).done(function (data) {
         var existe = false;
         $.each(data, function (ind, contacto) {

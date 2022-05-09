@@ -21,7 +21,7 @@ include_once("../../header.php");
 
 <div class="container mt-2">
     <div class="container mt-2">
-        <form class="form-group" id="formularioContacto" method="POST">
+        <form class="form-group mb-2 col-4" id="formularioContacto" method="POST">
             <label class="mt-2" for="nombre">Nombre:</label>
             <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="helpId" placeholder="Nombre">
             <label class="mt-2" for="">Empresa:</label>
