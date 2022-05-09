@@ -21,7 +21,7 @@ include_once("../../header.php");
 
 <div class="container mt-2">
     <div class="container mt-2">
-        <form class="form-group" id="formularioContacto" method="POST">
+        <form class="row" id="formularioContacto" method="POST">
             <label class="mt-2" for="nombre">Nombre:</label>
             <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="helpId" placeholder="Nombre">
             <label class="mt-2" for="">Empresa:</label>
@@ -31,12 +31,19 @@ include_once("../../header.php");
             <label class="mt-2" for="mail">Mail:</label>
             <input type="text" class="form-control" name="mail" id="mail" aria-describedby="helpId" placeholder="Mail">
             <label class="mt-2" for="pais">Pais:</label>
+            <div class="form-group col-lg-6">
             <input type="text" id="pais" name="pais" class="form-control">
-            <select id="mostrarPaises" class="form-control mt-3">
-            </select>
+            </div>
+            <div class="form-group col-lg-6">
+            <select id="mostrarPaises" class="form-control"></select>
+            </div> 
             <label class="mt-2" for="estado">Estado</label>
-            <input type="text" id="estado" name="estado" class="form-control">
-            <select id="mostrarEstados" class="form-control mt-3"></select>
+            <div class="form-group col-lg-6">
+            <input disabled type="text" id="estado" name="estado" class="form-control ">
+            </div>
+            <div class="form-group col-lg-6">
+            <select id="mostrarEstados" class="form-control "></select>
+            </div>
             <label class="mt-2" for="comentarios">Comentarios:</label>
             <textarea type="text" class="form-control" name="comentarios" id="comentarios" aria-describedby="helpId" placeholder="Comentarios"></textarea>
         </form>

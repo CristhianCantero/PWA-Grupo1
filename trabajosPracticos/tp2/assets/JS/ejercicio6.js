@@ -18,6 +18,43 @@ $(document).ready(function () {
                 console.log(paises);
                 $("#mostrarPaises").append(paises);
             });
+            let availableTags = new Array();
+            data.forEach((pais) => {
+                availableTags.push(pais.descripcion);
+            });
+            $("#pais").autocomplete({
+                source: availableTags,
+                select: function (event, ui) {
+                    console.log(ui);
+                    let descripcion = ui.item.label;
+                    let paises = new Array();
+                    paises = document.getElementById("mostrarPaises").options;
+
+                    console.log(paises);
+                    var options = $('#mostrarPaises option');
+
+                    var valor = $.map(options, function (option) {
+                        let retorno;
+                        if (option.label == descripcion) {
+                            retorno = option.value
+                        }
+                        return retorno;
+                    });
+
+                    Fuente: https://www.iteramos.com/pregunta/2948/como-obtener-todas-las-opciones-de-un-selecto-usando-jquery
+
+                    $("#mostrarPaises option[value=" + valor + "]").attr("selected", true);
+                    $("#mostrarPaises").trigger("change");
+
+                    console.log(paises);
+                    let texto = document.getElementById("estado");
+                    texto.disabled = false;
+
+                }
+            });
+
+
+
         },
         error: function muestraError(err) {
             console.log(err);
@@ -43,6 +80,8 @@ $(document).ready(function () {
 
 
     $("#mostrarPaises").on("change", function () {
+        let texto = document.getElementById("estado");
+        texto.disabled = false;
         console.log(document.getElementById("mostrarPaises").value);
         $.ajax({
             url: "assets/consultasBD/estados.php?idpais=" + document.getElementById("mostrarPaises").value,
@@ -52,6 +91,8 @@ $(document).ready(function () {
             success: function (data) {
                 $("#pais").on("keyup", function () {
                     $("#mostrarEstados").text("");
+                    texto.disabled = true;
+                    texto.value = "";
                 });
                 console.log(data);
                 $("#mostrarEstados").text("");
@@ -64,9 +105,51 @@ $(document).ready(function () {
                 data.forEach((estado) => {
                     availableTags.push(estado.descripcion);
                 });
-                $("#estado").autocomplete({
-                    source: availableTags
+                
+                $("#estado").on("keyup", function () {
+                    $("#mostrarEstados").text("");
+                    let estados = "";
+                    let inputEstado = document.getElementById("estado").value.toLowerCase();
+                    $.each(data, function (i, item) {
+                        if (item.descripcion.toLowerCase().includes(inputEstado)) {
+                            estados += `<option value='${item.id}'>${item.descripcion}</option>`;
+                        }
+                    });
+                    console.log(estados);
+                    $("#mostrarEstados").append(estados);
                 });
+
+                $("#estado").autocomplete({
+                    source: availableTags,
+                    select: function (event, ui) {
+                        console.log(ui);
+                        let descripcion = ui.item.label;
+                        let estados = new Array();
+                        estados = document.getElementById("mostrarEstados").options;
+    
+                        console.log(estados);
+                        let options = $('#mostrarEstados option');
+                        console.log(options);
+                        let valor = $.map(options, function (option) {
+                            let retorno;
+                            if (option.label == descripcion) {
+                                retorno = option.value
+                            }
+                            return retorno;
+                        });
+                        console.log(valor);
+                        Fuente: https://www.iteramos.com/pregunta/2948/como-obtener-todas-las-opciones-de-un-selecto-usando-jquery
+    
+                        $("#mostrarEstados option[value=" + valor + "]").attr("selected", true);
+                        $("#mostrarEstados").trigger("change");
+    
+                        console.log(estados);
+                        let texto = document.getElementById("estado");
+                        texto.disabled = false;
+    
+                    }
+                });
+
             },
             error: function (error) {
                 console.log(error);
